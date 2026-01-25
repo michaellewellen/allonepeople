@@ -1,0 +1,846 @@
+/* ========================================
+   GLOBAL STYLES
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FFFEF0;
+    color: #3D2817;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ========================================
+   HEADER STYLES
+   ======================================== */
+
+.site-header {
+    background-color: #FFD700;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-banner {
+    width: 100%;
+}
+
+.logo-container {
+    position: relative;
+    width: 100%;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tagline {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 0.9em;
+    color: #3D2817;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+}
+
+.main-nav a {
+    color: #3D2817;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav a:hover {
+    background-color: rgba(205, 133, 63, 0.3);
+}
+
+.main-nav a.active {
+    background-color: #CD853F;
+    color: white;
+}
+
+/* ========================================
+   FOOTER STYLES
+   ======================================== */
+
+.site-footer {
+    background-color: #3D2817;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+}
+
+/* ========================================
+   HOME PAGE STYLES
+   ======================================== */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 60px;
+    padding: 40px 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    color: #3D2817;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #4A4A4A;
+    margin-bottom: 15px;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.partnership {
+    background-color: #F5F5DC;
+    padding: 60px 20px;
+    margin-bottom: 60px;
+}
+
+.partnership-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.partnership-image {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.partnership-text p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #4A4A4A;
+}
+
+.partnership-text strong {
+    color: #8B4513;
+}
+
+.partnership-text a {
+    color: #CD853F;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.video-section {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.video-section h2 {
+    font-size: 2em;
+    color: #3D2817;
+    margin-bottom: 30px;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ========================================
+   MISSION PAGE STYLES
+   ======================================== */
+
+.mission-intro {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+    align-items: start;
+    margin-bottom: 60px;
+    padding: 40px 20px;
+}
+
+.mission-content h1 {
+    font-size: 2.5em;
+    color: #3D2817;
+    margin-bottom: 30px;
+}
+
+.highlight-box {
+    background-color: #FFF8DC;
+    border-left: 4px solid #CD853F;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.highlight-box strong {
+    color: #8B4513;
+}
+
+.mission-statement {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #4A4A4A;
+}
+
+.mission-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.the-need {
+    background-color: #F5F5DC;
+    padding: 60px 20px;
+    margin-bottom: 60px;
+}
+
+.the-need h2 {
+    font-size: 2.2em;
+    color: #3D2817;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.need-content {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.need-text p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #4A4A4A;
+    margin-bottom: 20px;
+}
+
+.impact-statement {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #8B4513;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.need-video iframe {
+    width: 100%;
+    height: 315px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.student-impact {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+    align-items: center;
+    padding: 40px 20px;
+    margin-bottom: 60px;
+}
+
+.impact-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.impact-cta {
+    text-align: center;
+    padding: 40px;
+}
+
+.impact-cta h2 {
+    font-size: 2em;
+    color: #3D2817;
+    margin-bottom: 20px;
+}
+
+.impact-cta p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #4A4A4A;
+    margin-bottom: 30px;
+}
+
+.donate-button {
+    display: inline-block;
+    background-color: #CD853F;
+    color: white;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.donate-button:hover {
+    background-color: #8B4513;
+}
+
+/* ========================================
+   WHERE WE WORK PAGE STYLES
+   ======================================== */
+
+.work-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    margin-bottom: 60px;
+    padding: 40px 20px;
+}
+
+.work-content h1 {
+    font-size: 2.5em;
+    color: #3D2817;
+    margin-bottom: 30px;
+}
+
+.work-content p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #4A4A4A;
+    margin-bottom: 20px;
+}
+
+.work-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-map img {
+    max-width: 100%;
+    height: auto;
+    max-height: 600px;
+}
+
+.work-focus {
+    background-color: #F5F5DC;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+    align-items: center;
+    padding: 60px 20px;
+    margin-bottom: 60px;
+}
+
+.work-flag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-flag img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.focus-content h2 {
+    font-size: 2em;
+    color: #3D2817;
+    margin-bottom: 20px;
+}
+
+.focus-content p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #4A4A4A;
+    margin-bottom: 20px;
+}
+
+/* ========================================
+   WAYS TO GIVE PAGE STYLES
+   ======================================== */
+
+.give-intro {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+    align-items: start;
+    margin-bottom: 60px;
+    padding: 40px 20px;
+}
+
+.give-content h1 {
+    font-size: 2.5em;
+    color: #3D2817;
+    margin-bottom: 30px;
+}
+
+.give-content p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #4A4A4A;
+    margin-bottom: 20px;
+}
+
+.give-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.donation-options {
+    background-color: #F5F5DC;
+    padding: 60px 20px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.donation-options h2 {
+    font-size: 2.2em;
+    color: #3D2817;
+    margin-bottom: 20px;
+}
+
+.donation-intro {
+    font-size: 1.2em;
+    color: #4A4A4A;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.donation-methods {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.paypal-option, .mail-option {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.paypal-option h3, .mail-option h3 {
+    font-size: 1.5em;
+    color: #3D2817;
+    margin-bottom: 20px;
+}
+
+.paypal-option form {
+    margin-top: 20px;
+}
+
+.mail-option p {
+    font-size: 1.1em;
+    color: #4A4A4A;
+    margin-bottom: 15px;
+}
+
+.mail-option address {
+    font-style: normal;
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #3D2817;
+    background-color: #FFF8DC;
+    padding: 20px;
+    border-radius: 4px;
+    border-left: 4px solid #CD853F;
+}
+
+/* ========================================
+   ABOUT PAGE STYLES
+   ======================================== */
+
+.about-intro {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    padding: 40px 20px;
+}
+
+.about-intro h1 {
+    font-size: 2.5em;
+    color: #3D2817;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.about-intro p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #4A4A4A;
+    margin-bottom: 20px;
+}
+
+.board-members {
+    padding: 40px 20px;
+}
+
+.board-members h2 {
+    font-size: 2.2em;
+    color: #3D2817;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.board-member {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+    align-items: start;
+    max-width: 1000px;
+    margin: 0 auto 50px;
+    padding: 30px;
+    background-color: #F5F5DC;
+    border-radius: 8px;
+}
+
+.board-member.right {
+    grid-template-columns: 1fr 300px;
+}
+
+.member-photo img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.member-bio h3 {
+    font-size: 1.8em;
+    color: #3D2817;
+    margin-bottom: 5px;
+}
+
+.member-title {
+    font-size: 1.1em;
+    color: #CD853F;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.member-bio p {
+    font-size: 1em;
+    line-height: 1.8;
+    color: #4A4A4A;
+}
+
+/* ========================================
+   CONTACT PAGE STYLES
+   ======================================== */
+
+.contact-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.contact-page h1 {
+    font-size: 2.5em;
+    color: #3D2817;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contact-info {
+    background-color: #F5F5DC;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contact-info h2 {
+    font-size: 1.8em;
+    color: #3D2817;
+    margin-bottom: 15px;
+}
+
+.contact-info address {
+    font-style: normal;
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #4A4A4A;
+    margin-bottom: 15px;
+}
+
+.contact-phone,
+.contact-email {
+    font-size: 1.1em;
+    color: #4A4A4A;
+    margin: 5px 0;
+}
+
+.contact-form-section {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-section h2 {
+    font-size: 1.8em;
+    color: #3D2817;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 1.1em;
+    color: #3D2817;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    padding: 12px;
+    font-size: 1em;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #CD853F;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.checkbox-group {
+    flex-direction: row;
+    align-items: center;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.submit-button {
+    background-color: #CD853F;
+    color: white;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+.submit-button:hover {
+    background-color: #8B4513;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN - MOBILE
+   ======================================== */
+
+@media (max-width: 768px) {
+    /* Header adjustments */
+    .logo {
+        max-width: 200px;
+    }
+    
+    .main-nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .main-nav a {
+        display: block;
+        width: 100%;
+    }
+    
+    /* Home page mobile */
+    .hero {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-content h1 {
+        font-size: 2em;
+    }
+    
+    .partnership-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .video-container iframe {
+        height: 250px;
+    }
+    
+    /* Mission page mobile */
+    .mission-intro {
+        grid-template-columns: 1fr;
+    }
+    
+    .mission-content h1 {
+        font-size: 2em;
+    }
+    
+    .need-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .need-video iframe {
+        height: 250px;
+    }
+    
+    .student-impact {
+        grid-template-columns: 1fr;
+    }
+    
+    .impact-cta {
+        padding: 20px;
+    }
+    
+    /* Where We Work page mobile */
+    .work-intro {
+        grid-template-columns: 1fr;
+    }
+    
+    .work-content h1 {
+        font-size: 2em;
+    }
+    
+    .work-focus {
+        grid-template-columns: 1fr;
+    }
+    
+    .work-flag img {
+        max-width: 300px;
+    }
+    
+    /* Ways to Give page mobile */
+    .give-intro {
+        grid-template-columns: 1fr;
+    }
+    
+    .give-content h1 {
+        font-size: 2em;
+    }
+    
+    .donation-methods {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .paypal-option, .mail-option {
+        padding: 30px 20px;
+    }
+    
+    /* About page mobile */
+    .about-intro h1 {
+        font-size: 2em;
+    }
+    
+    .board-member,
+    .board-member.right {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .member-photo {
+        text-align: center;
+    }
+    
+    .member-photo img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    /* Contact page mobile */
+    .contact-page h1 {
+        font-size: 2em;
+    }
+    
+    .contact-form-section {
+        padding: 20px;
+    }
+    
+    .submit-button {
+        width: 100%;
+    }
+}

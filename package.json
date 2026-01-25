@@ -1,0 +1,26 @@
+{
+  "name": "allonepeople",
+  "version": "1.0.0",
+  "description": "Web site for All One People",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaellewellen/allonepeople.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/michaellewellen/allonepeople/issues"
+  },
+  "homepage": "https://github.com/michaellewellen/allonepeople#readme",
+  "dependencies": {
+    "ejs": "^4.0.1",   
+    "express": "^5.2.1"
+  }
+}

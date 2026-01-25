@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All One People - Lifting, Educating, and Inspiring Africa's Youth</title>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+
+    <body> 
+        <header class="site-header">
+            <div class="logo-banner">
+                <div class="logo-container">
+                    <img src="/images/logo.jpg" alt="All One People" class="logo">
+                    <p class="tagline">A 501(c)3 non-profit corp.</p>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <a href="/" class="<%= typeof page !== 'undefined' && page === 'home' ? 'active' : '' %>">Home</a>
+                <a href="/mission" class="<%= typeof page !== 'undefined' && page === 'mission' ? 'active' : '' %>">Our Mission</a>
+                <a href="/where-we-work" class="<%= typeof page !== 'undefined' && page === 'where' ? 'active' : '' %>">Where we work</a>
+                <!-- <a href="/projects" class="<%= typeof page !== 'undefined' && page === 'projects' ? 'active' : '' %>">Projects</a> -->
+                <a href="/ways-to-give" class="<%= typeof page !== 'undefined' && page === 'give' ? 'active' : '' %>">Ways to give</a>
+                <a href="/about" class="<%= typeof page !== 'undefined' && page === 'about' ? 'active' : '' %>">About</a>
+                <a href="/contact" class="<%= typeof page !== 'undefined' && page === 'contact' ? 'active' : '' %>">Contact</a>                
+            </nav>
+        </header>
+        <main>
